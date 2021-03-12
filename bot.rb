@@ -17,6 +17,8 @@ bot.message(containing: /d+o+ i+t+/i) do |event|
   event.respond 'https://tenor.com/2Uz8.gif'
   event.respond 'https://tenor.com/uQj1.gif'
   event.respond 'https://tenor.com/sMB9.gif'
+end
 
 at_exit { bot.stop }
 bot.run
+
