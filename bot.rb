@@ -3,9 +3,12 @@ require 'dotenv/load'
 
 bot = Discordrb::Bot.new token: ENV["TOKEN"]
 
-puts "URL: #{bot.invite_url}"
+cmdbot = Discordrb::Commands::CommandBot.new token: ENV["TOKEN"], prefix: '!'
 
-bot.message(containing: /o+h+ n+o+/i) do |event|
+puts "URL: #{bot.invite_url}"
+puts "URL: #{cmdbot.invite_url}"
+
+cmdbot.message(containing: /o+h+ n+o+/i) do |event|
   event.respond 'https://tenor.com/Uyxd.gif'
 end
 
@@ -19,6 +22,12 @@ bot.message(containing: /d+o+ i+t+/i) do |event|
   event.respond 'https://tenor.com/sMB9.gif'
 end
 
+cmdbot.command :test do |event|
+  event.user.name
+end
+
 at_exit { bot.stop }
-bot.run
+at_exit { cmdbot.stop }
+# bot.run
+cmdbot.run
 
