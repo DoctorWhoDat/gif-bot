@@ -22,7 +22,7 @@ class Pairs
         gif: 'https://tenor.com/sMB9.gif'
       },
       {
-        match: '/hellothisispaul/i',
+        match: /hellothisispaul/i,
         gif: "Paul? I don't know any Paul, just a pail."
       }
     ]
