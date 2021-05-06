@@ -23,9 +23,5 @@ bot.mention do |event|
   event.respond 'You rang?'
 end
 
-bot.disconnected do |event|
-  event.respond 'Byeeeeee :dimmadab:'
-end
-
 at_exit { bot.stop }
 bot.run
