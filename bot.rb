@@ -22,7 +22,7 @@ bot.command :test do |event|
 end
 
 bot.command :get_ignore_phrase do |event|
-  "If you want me to ignore your dumb ass, put this in your message: #{ignore_phrase.inspect.gsub('/','')}"
+  "If you want me to ignore your dumb ass, put this in your message: ```#{ignore_phrase.inspect.gsub('/','')}```"
 end
 
 bot.mention do |event|
