@@ -2,7 +2,7 @@ class Pairs
   def initialize
     @x = [
       {
-        match: /o+h+ n+o+/i,
+        match: /o+h+ n+o+(\W|\z)/i,
         gif: 'https://tenor.com/Uyxd.gif'
       },
       {
