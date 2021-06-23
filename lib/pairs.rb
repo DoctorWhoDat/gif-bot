@@ -5,10 +5,10 @@ class Pairs
         match: /o+h+ n+o+(\W|\z)/i,
         gif: 'https://tenor.com/Uyxd.gif'
       },
-      {
-        match: /u+g+h+/i,
-        gif: 'ughhhhh'
-      },
+      #{
+      #  match: /u+g+h+/i,
+      #  gif: 'ughhhhh'
+      #},
       {
         match: /d+o+ i+t+/i,
         gif: 'https://tenor.com/2Uz8.gif'
@@ -24,6 +24,10 @@ class Pairs
       {
         match: /hellothisispaul/i,
         gif: "Paul? I don't know any Paul, just a pail."
+      },
+      {
+        match: /hayes/i,
+        gif: "Slut"
       }
     ]
   end
